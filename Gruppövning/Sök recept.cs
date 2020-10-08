@@ -16,5 +16,11 @@ namespace Gruppövning
         {
             InitializeComponent();
         }
+
+        private void cmdLogin_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+        }
     }
 }

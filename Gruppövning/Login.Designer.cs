@@ -42,6 +42,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(131, 22);
             this.txtUsername.TabIndex = 0;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtPassword
             // 
@@ -50,6 +51,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(131, 22);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // cmdMemberLogin
             // 
@@ -60,6 +62,7 @@
             this.cmdMemberLogin.TabIndex = 2;
             this.cmdMemberLogin.Text = "Logga in";
             this.cmdMemberLogin.UseVisualStyleBackColor = true;
+            this.cmdMemberLogin.Click += new System.EventHandler(this.cmdMemberLogin_Click);
             // 
             // label1
             // 
