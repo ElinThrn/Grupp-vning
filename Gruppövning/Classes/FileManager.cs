@@ -12,23 +12,17 @@ namespace Gruppövning.Classes
     {
         public static void Write(Recipe recipe)
         {
-            string recipeInput = string.Join(";", recipe.Id, recipe.Title, recipe.Description, recipe.Category) + "%";
-
-            foreach (var ingredient in recipe.IngredientsValue)
+            using (StreamWriter writer = new StreamWriter(SetPath(), true))
             {
-                string.Join(";", ingredient.Value, ingredient.Key);
-                recipeInput += string.Join(";", ingredient.Value, ingredient.Key);
-            }
-
-            using (StreamWriter writer  = new StreamWriter(ConfigurationManager.AppSettings["recipeFile"], true))
-            {
-                writer.WriteLine(recipeInput);
+                writer.WriteLine(FormatRecipe(recipe));
             }
         }
 
-        public static void Update(Recipe recipe)
+        public static void Update(Recipe oldRecipe, Recipe newRecipe)
         {
-            
+            string text = File.ReadAllText(SetPath());
+            text = text.Replace(FormatRecipe(oldRecipe), FormatRecipe(newRecipe));
+            File.WriteAllText(SetPath(), text);
         }
         public static List<Recipe> Read()
         {
@@ -68,9 +62,23 @@ namespace Gruppövning.Classes
 
             return recipeList;
         }
-        public static void Delete()
+        public static void Delete(Guid id)
         {
+            var oldLines = File.ReadAllLines(SetPath());
+            var newLines = oldLines.Where(line => !line.Contains(id.ToString()));
+            File.WriteAllLines(SetPath(), newLines);
+        }
 
+        public static string FormatRecipe(Recipe recipe)
+        {
+            string recipeInput = string.Join(";", recipe.Id.ToString(), recipe.Title, recipe.Description, recipe.Category) + "%";
+
+            foreach (var ingredient in recipe.IngredientsByAmount)
+            {
+                recipeInput += string.Join(";", ingredient.Value, ingredient.Key);
+            }
+
+            return recipeInput;
         }
 
         private static string SetPath()
