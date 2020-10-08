@@ -104,7 +104,7 @@
             this.cmdAddRecipe.Text = "Lägg till";
             this.cmdAddRecipe.UseVisualStyleBackColor = true;
             // 
-            // MedlemsVy
+            // MemberView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,7 +114,7 @@
             this.Controls.Add(this.cmdSearchLogin);
             this.Controls.Add(this.txtSearchRecipe);
             this.Controls.Add(this.groupBox1);
-            this.Name = "MedlemsVy";
+            this.Name = "MemberView";
             this.Text = "InloggadVy";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
