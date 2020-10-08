@@ -38,15 +38,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.cmdAdd = new System.Windows.Forms.Button();
-            this.cmdDelete = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cmdAddRecipe = new System.Windows.Forms.Button();
+            this.cmdDeleteRecipe = new System.Windows.Forms.Button();
+            this.txtIngredient = new System.Windows.Forms.TextBox();
+            this.txtIngredientMeasure = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cmdAddIngredient = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmdDeleteIngredient = new System.Windows.Forms.Button();
+            this.listBoxEdit = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // txtRecipeName
@@ -143,41 +143,41 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Välj tillagningssätt";
             // 
-            // cmdAdd
+            // cmdAddRecipe
             // 
-            this.cmdAdd.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdAdd.Location = new System.Drawing.Point(49, 402);
-            this.cmdAdd.Name = "cmdAdd";
-            this.cmdAdd.Size = new System.Drawing.Size(146, 42);
-            this.cmdAdd.TabIndex = 10;
-            this.cmdAdd.Text = "Lägg till recept";
-            this.cmdAdd.UseVisualStyleBackColor = true;
+            this.cmdAddRecipe.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAddRecipe.Location = new System.Drawing.Point(49, 402);
+            this.cmdAddRecipe.Name = "cmdAddRecipe";
+            this.cmdAddRecipe.Size = new System.Drawing.Size(146, 42);
+            this.cmdAddRecipe.TabIndex = 10;
+            this.cmdAddRecipe.Text = "Lägg till recept";
+            this.cmdAddRecipe.UseVisualStyleBackColor = true;
             // 
-            // cmdDelete
+            // cmdDeleteRecipe
             // 
-            this.cmdDelete.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdDelete.Location = new System.Drawing.Point(220, 402);
-            this.cmdDelete.Name = "cmdDelete";
-            this.cmdDelete.Size = new System.Drawing.Size(146, 42);
-            this.cmdDelete.TabIndex = 11;
-            this.cmdDelete.Text = "Ta bort recept";
-            this.cmdDelete.UseVisualStyleBackColor = true;
+            this.cmdDeleteRecipe.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdDeleteRecipe.Location = new System.Drawing.Point(220, 402);
+            this.cmdDeleteRecipe.Name = "cmdDeleteRecipe";
+            this.cmdDeleteRecipe.Size = new System.Drawing.Size(146, 42);
+            this.cmdDeleteRecipe.TabIndex = 11;
+            this.cmdDeleteRecipe.Text = "Ta bort recept";
+            this.cmdDeleteRecipe.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtIngredient
             // 
-            this.textBox1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(396, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(317, 22);
-            this.textBox1.TabIndex = 12;
+            this.txtIngredient.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngredient.Location = new System.Drawing.Point(396, 35);
+            this.txtIngredient.Name = "txtIngredient";
+            this.txtIngredient.Size = new System.Drawing.Size(317, 22);
+            this.txtIngredient.TabIndex = 12;
             // 
-            // textBox2
+            // txtIngredientMeasure
             // 
-            this.textBox2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(396, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(317, 22);
-            this.textBox2.TabIndex = 13;
+            this.txtIngredientMeasure.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngredientMeasure.Location = new System.Drawing.Point(396, 86);
+            this.txtIngredientMeasure.Name = "txtIngredientMeasure";
+            this.txtIngredientMeasure.Size = new System.Drawing.Size(317, 22);
+            this.txtIngredientMeasure.TabIndex = 13;
             // 
             // label6
             // 
@@ -209,39 +209,38 @@
             this.cmdAddIngredient.Text = "Lägg till";
             this.cmdAddIngredient.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // cmdDeleteIngredient
             // 
-            this.textBox3.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(396, 143);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(317, 214);
-            this.textBox3.TabIndex = 17;
+            this.cmdDeleteIngredient.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdDeleteIngredient.Location = new System.Drawing.Point(480, 114);
+            this.cmdDeleteIngredient.Name = "cmdDeleteIngredient";
+            this.cmdDeleteIngredient.Size = new System.Drawing.Size(77, 23);
+            this.cmdDeleteIngredient.TabIndex = 18;
+            this.cmdDeleteIngredient.Text = "Ta bort";
+            this.cmdDeleteIngredient.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // listBoxEdit
             // 
-            this.button1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(480, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Ta bort";
-            this.button1.UseVisualStyleBackColor = true;
+            this.listBoxEdit.FormattingEnabled = true;
+            this.listBoxEdit.Location = new System.Drawing.Point(399, 160);
+            this.listBoxEdit.Name = "listBoxEdit";
+            this.listBoxEdit.Size = new System.Drawing.Size(314, 199);
+            this.listBoxEdit.TabIndex = 19;
             // 
             // Redigera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 465);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.listBoxEdit);
+            this.Controls.Add(this.cmdDeleteIngredient);
             this.Controls.Add(this.cmdAddIngredient);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.cmdDelete);
-            this.Controls.Add(this.cmdAdd);
+            this.Controls.Add(this.txtIngredientMeasure);
+            this.Controls.Add(this.txtIngredient);
+            this.Controls.Add(this.cmdDeleteRecipe);
+            this.Controls.Add(this.cmdAddRecipe);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -271,14 +270,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button cmdAdd;
-        private System.Windows.Forms.Button cmdDelete;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button cmdAddRecipe;
+        private System.Windows.Forms.Button cmdDeleteRecipe;
+        private System.Windows.Forms.TextBox txtIngredient;
+        private System.Windows.Forms.TextBox txtIngredientMeasure;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button cmdAddIngredient;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdDeleteIngredient;
+        private System.Windows.Forms.ListBox listBoxEdit;
     }
 }
