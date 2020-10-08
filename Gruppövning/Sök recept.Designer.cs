@@ -46,6 +46,7 @@
             this.cmdLogin.TabIndex = 0;
             this.cmdLogin.Text = "Logga in";
             this.cmdLogin.UseVisualStyleBackColor = true;
+            this.cmdLogin.Click += new System.EventHandler(this.cmdLogin_Click);
             // 
             // txtSearchText
             // 
