@@ -25,10 +25,6 @@ namespace Gruppövning.Classes
             File.WriteAllText(SetPath(), text);
         }
 
-        public static void Read()
-        {
-
-        }
         public static void Delete(Guid id)
         {
             var oldLines = File.ReadAllLines(SetPath());
