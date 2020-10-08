@@ -28,9 +28,9 @@ namespace Gruppövning.Classes
             this.Category = category;
             this.IngredientsByAmount = ingredients;
         }
-        public void Save(Recipe recipe)
+        public void Save()
         {
-            FileManager.Write(recipe);
+            FileManager.Write(this);
         }
 
         public void SaveEdited()
