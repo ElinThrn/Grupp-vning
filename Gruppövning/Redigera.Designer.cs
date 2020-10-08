@@ -28,63 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.txtRecipeName = new System.Windows.Forms.TextBox();
+            this.txtRecipeInfo = new System.Windows.Forms.TextBox();
+            this.cboKitchen = new System.Windows.Forms.ComboBox();
+            this.cboCategori = new System.Windows.Forms.ComboBox();
+            this.cboRecipeMethod = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cmdAdd = new System.Windows.Forms.Button();
+            this.cmdDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtRecipeName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(56, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(317, 22);
-            this.textBox1.TabIndex = 0;
+            this.txtRecipeName.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRecipeName.Location = new System.Drawing.Point(56, 63);
+            this.txtRecipeName.Name = "txtRecipeName";
+            this.txtRecipeName.Size = new System.Drawing.Size(317, 22);
+            this.txtRecipeName.TabIndex = 0;
             // 
-            // textBox2
+            // txtRecipeInfo
             // 
-            this.textBox2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(56, 117);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(317, 105);
-            this.textBox2.TabIndex = 1;
+            this.txtRecipeInfo.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRecipeInfo.Location = new System.Drawing.Point(56, 117);
+            this.txtRecipeInfo.Multiline = true;
+            this.txtRecipeInfo.Name = "txtRecipeInfo";
+            this.txtRecipeInfo.Size = new System.Drawing.Size(317, 105);
+            this.txtRecipeInfo.TabIndex = 1;
             // 
-            // comboBox1
+            // cboKitchen
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(56, 258);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(317, 21);
-            this.comboBox1.TabIndex = 2;
+            this.cboKitchen.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboKitchen.FormattingEnabled = true;
+            this.cboKitchen.Location = new System.Drawing.Point(56, 258);
+            this.cboKitchen.Name = "cboKitchen";
+            this.cboKitchen.Size = new System.Drawing.Size(317, 21);
+            this.cboKitchen.TabIndex = 2;
             // 
-            // comboBox2
+            // cboCategori
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(56, 309);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(317, 21);
-            this.comboBox2.TabIndex = 3;
+            this.cboCategori.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCategori.FormattingEnabled = true;
+            this.cboCategori.Location = new System.Drawing.Point(56, 309);
+            this.cboCategori.Name = "cboCategori";
+            this.cboCategori.Size = new System.Drawing.Size(317, 21);
+            this.cboCategori.TabIndex = 3;
             // 
-            // comboBox3
+            // cboRecipeMethod
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(56, 360);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(317, 21);
-            this.comboBox3.TabIndex = 4;
+            this.cboRecipeMethod.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboRecipeMethod.FormattingEnabled = true;
+            this.cboRecipeMethod.Location = new System.Drawing.Point(56, 360);
+            this.cboRecipeMethod.Name = "cboRecipeMethod";
+            this.cboRecipeMethod.Size = new System.Drawing.Size(317, 21);
+            this.cboRecipeMethod.TabIndex = 4;
             // 
             // label1
             // 
@@ -136,43 +136,43 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Välj tillagningssätt";
             // 
-            // button1
+            // cmdAdd
             // 
-            this.button1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(90, 411);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 42);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Lägg till";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmdAdd.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAdd.Location = new System.Drawing.Point(90, 411);
+            this.cmdAdd.Name = "cmdAdd";
+            this.cmdAdd.Size = new System.Drawing.Size(112, 42);
+            this.cmdAdd.TabIndex = 10;
+            this.cmdAdd.Text = "Lägg till";
+            this.cmdAdd.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // cmdDelete
             // 
-            this.button2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(208, 411);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 42);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Ta bort";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cmdDelete.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdDelete.Location = new System.Drawing.Point(208, 411);
+            this.cmdDelete.Name = "cmdDelete";
+            this.cmdDelete.Size = new System.Drawing.Size(112, 42);
+            this.cmdDelete.TabIndex = 11;
+            this.cmdDelete.Text = "Ta bort";
+            this.cmdDelete.UseVisualStyleBackColor = true;
             // 
             // Redigera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(430, 502);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdDelete);
+            this.Controls.Add(this.cmdAdd);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cboRecipeMethod);
+            this.Controls.Add(this.cboCategori);
+            this.Controls.Add(this.cboKitchen);
+            this.Controls.Add(this.txtRecipeInfo);
+            this.Controls.Add(this.txtRecipeName);
             this.Name = "Redigera";
             this.Text = "Redigera";
             this.ResumeLayout(false);
@@ -182,17 +182,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox txtRecipeName;
+        private System.Windows.Forms.TextBox txtRecipeInfo;
+        private System.Windows.Forms.ComboBox cboKitchen;
+        private System.Windows.Forms.ComboBox cboCategori;
+        private System.Windows.Forms.ComboBox cboRecipeMethod;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button cmdAdd;
+        private System.Windows.Forms.Button cmdDelete;
     }
 }

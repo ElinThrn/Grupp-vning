@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gruppövning
 {
-    public partial class Form2 : Form
+    public partial class test : Form
     {
-        public Form2()
+        public test()
         {
             InitializeComponent();
         }
