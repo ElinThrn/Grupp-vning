@@ -17,7 +17,7 @@ namespace Gruppövning
             InitializeComponent();
         }
 
-        public Form1 SokVy;
+        public SearchRecipe SokVy;
         private void label2_Click(object sender, EventArgs e)
         {
 

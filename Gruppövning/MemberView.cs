@@ -18,6 +18,10 @@ namespace Gruppövning
 
             cboTypeRecipe.Items.Add("Kött");
             cboTypeRecipe.Items.Add("Fisk");
+            cboTypeRecipe.Items.Add("Sallader");
+            cboTypeRecipe.Items.Add("Soppor");
+            cboTypeRecipe.Items.Add("Dessert");
+            cboTypeRecipe.Items.Add("Kakor/Bakverk");
 
         }
 

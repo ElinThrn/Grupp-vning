@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace Gruppövning
 {
-    public partial class Form1 : Form
+    public partial class SearchRecipe : Form
     {
-        public Form1()
+        public SearchRecipe()
         {
             InitializeComponent();
+
+            cboRecipeType.Items.Add("Kött");
+            cboRecipeType.Items.Add("Fisk");
+            cboRecipeType.Items.Add("Sallader");
+            cboRecipeType.Items.Add("Soppor");
+            cboRecipeType.Items.Add("Dessert");
+            cboRecipeType.Items.Add("Kakor/Bakverk");
+
         }
 
         private void cmdLogin_Click(object sender, EventArgs e)

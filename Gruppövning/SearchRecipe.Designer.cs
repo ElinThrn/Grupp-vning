@@ -1,6 +1,6 @@
 ﻿namespace Gruppövning
 {
-    partial class Form1
+    partial class SearchRecipe
     {
         /// <summary>
         /// Required designer variable.
@@ -104,7 +104,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sök recept";
             // 
-            // Form1
+            // SearchRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,7 +116,7 @@
             this.Controls.Add(this.txtSearchText);
             this.Controls.Add(this.cmdLogin);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "SearchRecipe";
             this.Text = "Sök recept";
             this.ResumeLayout(false);
             this.PerformLayout();
