@@ -57,7 +57,9 @@ namespace Gruppövning.Classes
                         ingredientsDict.Add(ingredientsArr[i], ingredientsArr[i + 1]);
                     }
 
-                    tempRecipe = new Recipe(fieldsArr[0], fieldsArr[1], fieldsArr[2], ingredientsDict);
+                    Guid newGuid = Guid.Parse(fieldsArr[0]);
+
+                    tempRecipe = new Recipe(newGuid, fieldsArr[1], fieldsArr[2], fieldsArr[3], ingredientsDict);
 
                     recipeList.Add(tempRecipe);
                 }
