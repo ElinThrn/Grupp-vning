@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Recipe.cs" />
     <Compile Include="Sök recept.cs">
       <SubType>Form</SubType>
     </Compile>
