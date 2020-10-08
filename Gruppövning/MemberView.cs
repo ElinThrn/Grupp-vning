@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gruppövning
 {
-    public partial class MemberView : Form
+    public partial class MedlemsVy : Form
     {
-        public MemberView()
+        public MedlemsVy()
         {
             InitializeComponent();
 
