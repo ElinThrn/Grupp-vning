@@ -13,5 +13,11 @@ namespace Gruppövning.Classes
         public string Category { get; set; }
         public Dictionary<string, string> AmountOfIngredients { get; set; }
 
+        public Recipe(string title, string description, string category, Dictionary<string, string> ingredients)
+        {
+            this.Title = Title;
+            this.Description = description;
+        }
+
     }
 }
