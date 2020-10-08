@@ -28,10 +28,9 @@ namespace Gruppövning.Classes
             this.Category = category;
             this.IngredientsByAmount = ingredients;
         }
-        public void Save()
+        public void Save(Recipe recipe)
         {
-            // TODO: change to FileManager MethodCall
-            //SaveFile(this.Id, this.Title, this.Description, this.Category, this.IngredientsByAmount);
+            FileManager.Write(recipe);
         }
 
         public void SaveEdited()
@@ -42,8 +41,7 @@ namespace Gruppövning.Classes
 
         public void Delete()
         {
-            // TODO: change to Filemanager MethodCall
-            // DeleteRecipe(this.Id);
+            FileManager.Delete(this.Id);
         }
 
 
