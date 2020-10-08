@@ -17,6 +17,7 @@ namespace Gruppövning
             InitializeComponent();
         }
 
+        public Form1 SokVy;
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -37,10 +38,18 @@ namespace Gruppövning
             string userName = txtUsername.Text;
             string pw = txtPassword.Text;
 
-            if(userName != "" || pw != "")
+            if(userName == "admin" || pw == "password")
             {
-                MessageBox.Show("Inloggning lyckades.");
+           
+                MemberView member = new MemberView();
+                this.Hide();
+                SokVy.Hide();
+                member.Show();
+
             }
+
+
+
         }
     }
 }

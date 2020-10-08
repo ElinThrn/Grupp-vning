@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Gruppövning
 {
-    public partial class test : Form
+    public partial class MemberView : Form
     {
-        public test()
+        public MemberView()
         {
             InitializeComponent();
+
+            cboTypeRecipe.Items.Add("Kött");
+            cboTypeRecipe.Items.Add("Fisk");
+
         }
+
     }
 }

@@ -21,6 +21,8 @@ namespace Gruppövning
         {
             Login login = new Login();
             login.Show();
+            login.SokVy = this;
+           
         }
     }
 }

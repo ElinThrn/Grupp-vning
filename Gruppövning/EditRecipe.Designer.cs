@@ -1,6 +1,6 @@
 ﻿namespace Gruppövning
 {
-    partial class Redigera
+    partial class EditRecipe
     {
         /// <summary>
         /// Required designer variable.

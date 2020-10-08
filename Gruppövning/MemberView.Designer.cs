@@ -1,6 +1,6 @@
 ﻿namespace Gruppövning
 {
-    partial class MedlemsVy
+    partial class MemberView
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.cmdShowRecipesLogin = new System.Windows.Forms.Button();
-            this.cboTypeLogin = new System.Windows.Forms.ComboBox();
+            this.cboTypeRecipe = new System.Windows.Forms.ComboBox();
             this.cmdSearchLogin = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.txtSearchRecipe = new System.Windows.Forms.TextBox();
@@ -48,14 +48,14 @@
             this.cmdShowRecipesLogin.Text = "Visa";
             this.cmdShowRecipesLogin.UseVisualStyleBackColor = true;
             // 
-            // cboTypeLogin
+            // cboTypeRecipe
             // 
-            this.cboTypeLogin.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboTypeLogin.FormattingEnabled = true;
-            this.cboTypeLogin.Location = new System.Drawing.Point(30, 37);
-            this.cboTypeLogin.Name = "cboTypeLogin";
-            this.cboTypeLogin.Size = new System.Drawing.Size(121, 21);
-            this.cboTypeLogin.TabIndex = 11;
+            this.cboTypeRecipe.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTypeRecipe.FormattingEnabled = true;
+            this.cboTypeRecipe.Location = new System.Drawing.Point(30, 37);
+            this.cboTypeRecipe.Name = "cboTypeRecipe";
+            this.cboTypeRecipe.Size = new System.Drawing.Size(121, 21);
+            this.cboTypeRecipe.TabIndex = 11;
             // 
             // cmdSearchLogin
             // 
@@ -108,9 +108,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 443);
+            this.ClientSize = new System.Drawing.Size(528, 443);
             this.Controls.Add(this.cmdShowRecipesLogin);
-            this.Controls.Add(this.cboTypeLogin);
+            this.Controls.Add(this.cboTypeRecipe);
             this.Controls.Add(this.cmdSearchLogin);
             this.Controls.Add(this.txtSearchRecipe);
             this.Controls.Add(this.groupBox1);
@@ -125,7 +125,7 @@
         #endregion
 
         private System.Windows.Forms.Button cmdShowRecipesLogin;
-        private System.Windows.Forms.ComboBox cboTypeLogin;
+        private System.Windows.Forms.ComboBox cboTypeRecipe;
         private System.Windows.Forms.Button cmdSearchLogin;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox txtSearchRecipe;
