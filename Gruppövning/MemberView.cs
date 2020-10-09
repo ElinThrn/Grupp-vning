@@ -26,5 +26,10 @@ namespace Gruppövning
             EditRecipe editRecipe = new EditRecipe();
             editRecipe.Show();
         }
+
+        private void cmdSearchLogin_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

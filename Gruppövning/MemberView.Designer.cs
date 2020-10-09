@@ -41,9 +41,10 @@
             // cmdShowRecipesLogin
             // 
             this.cmdShowRecipesLogin.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdShowRecipesLogin.Location = new System.Drawing.Point(30, 372);
+            this.cmdShowRecipesLogin.Location = new System.Drawing.Point(60, 715);
+            this.cmdShowRecipesLogin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cmdShowRecipesLogin.Name = "cmdShowRecipesLogin";
-            this.cmdShowRecipesLogin.Size = new System.Drawing.Size(107, 35);
+            this.cmdShowRecipesLogin.Size = new System.Drawing.Size(214, 67);
             this.cmdShowRecipesLogin.TabIndex = 12;
             this.cmdShowRecipesLogin.Text = "Visa";
             this.cmdShowRecipesLogin.UseVisualStyleBackColor = true;
@@ -52,35 +53,41 @@
             // 
             this.cboTypeRecipe.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTypeRecipe.FormattingEnabled = true;
-            this.cboTypeRecipe.Location = new System.Drawing.Point(30, 37);
+            this.cboTypeRecipe.Location = new System.Drawing.Point(60, 71);
+            this.cboTypeRecipe.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cboTypeRecipe.Name = "cboTypeRecipe";
-            this.cboTypeRecipe.Size = new System.Drawing.Size(121, 21);
+            this.cboTypeRecipe.Size = new System.Drawing.Size(238, 38);
             this.cboTypeRecipe.TabIndex = 11;
             // 
             // cmdSearchLogin
             // 
             this.cmdSearchLogin.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdSearchLogin.Location = new System.Drawing.Point(240, 73);
+            this.cmdSearchLogin.Location = new System.Drawing.Point(480, 140);
+            this.cmdSearchLogin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cmdSearchLogin.Name = "cmdSearchLogin";
-            this.cmdSearchLogin.Size = new System.Drawing.Size(100, 23);
+            this.cmdSearchLogin.Size = new System.Drawing.Size(200, 44);
             this.cmdSearchLogin.TabIndex = 10;
             this.cmdSearchLogin.Text = "Sök";
             this.cmdSearchLogin.UseVisualStyleBackColor = true;
+            this.cmdSearchLogin.Click += new System.EventHandler(this.cmdSearchLogin_Click);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(18, 115);
+            this.listBox1.ItemHeight = 30;
+            this.listBox1.Location = new System.Drawing.Point(36, 221);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(406, 225);
+            this.listBox1.Size = new System.Drawing.Size(808, 424);
             this.listBox1.TabIndex = 9;
             // 
             // txtSearchRecipe
             // 
             this.txtSearchRecipe.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchRecipe.Location = new System.Drawing.Point(30, 73);
+            this.txtSearchRecipe.Location = new System.Drawing.Point(60, 140);
+            this.txtSearchRecipe.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtSearchRecipe.Name = "txtSearchRecipe";
-            this.txtSearchRecipe.Size = new System.Drawing.Size(188, 22);
+            this.txtSearchRecipe.Size = new System.Drawing.Size(372, 37);
             this.txtSearchRecipe.TabIndex = 8;
             // 
             // groupBox1
@@ -88,18 +95,21 @@
             this.groupBox1.Controls.Add(this.cmdAddRecipe);
             this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(24, 23);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(453, 410);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Size = new System.Drawing.Size(906, 788);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sök recept";
             // 
             // cmdAddRecipe
             // 
-            this.cmdAddRecipe.Location = new System.Drawing.Point(140, 360);
+            this.cmdAddRecipe.Location = new System.Drawing.Point(280, 692);
+            this.cmdAddRecipe.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cmdAddRecipe.Name = "cmdAddRecipe";
-            this.cmdAddRecipe.Size = new System.Drawing.Size(107, 35);
+            this.cmdAddRecipe.Size = new System.Drawing.Size(214, 67);
             this.cmdAddRecipe.TabIndex = 15;
             this.cmdAddRecipe.Text = "Lägg till";
             this.cmdAddRecipe.UseVisualStyleBackColor = true;
@@ -107,14 +117,15 @@
             // 
             // MemberView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 443);
+            this.ClientSize = new System.Drawing.Size(1056, 852);
             this.Controls.Add(this.cmdShowRecipesLogin);
             this.Controls.Add(this.cboTypeRecipe);
             this.Controls.Add(this.cmdSearchLogin);
             this.Controls.Add(this.txtSearchRecipe);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "MemberView";
             this.Text = "InloggadVy";
             this.groupBox1.ResumeLayout(false);
