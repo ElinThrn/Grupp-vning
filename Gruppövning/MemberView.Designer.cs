@@ -103,7 +103,6 @@
             this.cmdAddRecipe.TabIndex = 15;
             this.cmdAddRecipe.Text = "Lägg till";
             this.cmdAddRecipe.UseVisualStyleBackColor = true;
-            this.cmdAddRecipe.Click += new System.EventHandler(this.cmdAddRecipe_Click);
             // 
             // MemberView
             // 
