@@ -31,13 +31,17 @@ namespace Gruppövning
         private void cmdAddIngredient_Click(object sender, EventArgs e)
         {
             IngredientsByValue.Add(txtIngredient.Text, txtIngredientMeasure.Text);
-            lstViewIngredients.Items.Clear();
+            lstIngredients.Items.Clear();
 
             foreach (KeyValuePair<string, string> kvp in IngredientsByValue)
             {
                 lstIngredients.Items.Add(kvp.Value + " - " + kvp.Key);
             }
 
+            txtIngredient.Text = String.Empty;
+            txtIngredientMeasure.Text = String.Empty;
+
         }
+
     }
 }

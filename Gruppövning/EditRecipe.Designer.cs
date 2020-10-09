@@ -47,7 +47,6 @@
             this.cmdAddIngredient = new System.Windows.Forms.Button();
             this.cmdDeleteIngredient = new System.Windows.Forms.Button();
             this.lstIngredients = new System.Windows.Forms.ListBox();
-            this.lstViewIngredients = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // txtRecipeName
@@ -227,24 +226,14 @@
             this.lstIngredients.FormattingEnabled = true;
             this.lstIngredients.Location = new System.Drawing.Point(399, 160);
             this.lstIngredients.Name = "lstIngredients";
-            this.lstIngredients.Size = new System.Drawing.Size(314, 69);
+            this.lstIngredients.Size = new System.Drawing.Size(314, 199);
             this.lstIngredients.TabIndex = 19;
-            // 
-            // lstViewIngredients
-            // 
-            this.lstViewIngredients.HideSelection = false;
-            this.lstViewIngredients.Location = new System.Drawing.Point(399, 251);
-            this.lstViewIngredients.Name = "lstViewIngredients";
-            this.lstViewIngredients.Size = new System.Drawing.Size(314, 123);
-            this.lstViewIngredients.TabIndex = 20;
-            this.lstViewIngredients.UseCompatibleStateImageBehavior = false;
             // 
             // EditRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 465);
-            this.Controls.Add(this.lstViewIngredients);
             this.Controls.Add(this.lstIngredients);
             this.Controls.Add(this.cmdDeleteIngredient);
             this.Controls.Add(this.cmdAddIngredient);
@@ -292,6 +281,5 @@
         private System.Windows.Forms.Button cmdAddIngredient;
         private System.Windows.Forms.Button cmdDeleteIngredient;
         private System.Windows.Forms.ListBox lstIngredients;
-        private System.Windows.Forms.ListView lstViewIngredients;
     }
 }
