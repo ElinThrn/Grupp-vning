@@ -43,5 +43,13 @@ namespace Gruppövning
 
         }
 
+        private void cmdDeleteIngredient_Click(object sender, EventArgs e)
+        {
+            string keyAndValue = lstIngredients.SelectedItem.ToString();
+            string toRemove = keyAndValue.Substring(keyAndValue.LastIndexOf(' ') + 1);
+            IngredientsByValue.Remove(toRemove);
+
+            lstIngredients.Items.RemoveAt(lstIngredients.SelectedIndex);
+        }
     }
 }

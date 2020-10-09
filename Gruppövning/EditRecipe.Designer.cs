@@ -220,6 +220,7 @@
             this.cmdDeleteIngredient.TabIndex = 18;
             this.cmdDeleteIngredient.Text = "Ta bort";
             this.cmdDeleteIngredient.UseVisualStyleBackColor = true;
+            this.cmdDeleteIngredient.Click += new System.EventHandler(this.cmdDeleteIngredient_Click);
             // 
             // lstIngredients
             // 
