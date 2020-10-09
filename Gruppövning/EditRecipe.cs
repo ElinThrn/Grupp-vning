@@ -18,14 +18,23 @@ namespace Gruppövning
         public EditRecipe()
         {
             InitializeComponent();
+            cboCategory.Items.Add("Kött");
+            cboCategory.Items.Add("Fisk");
+            cboCategory.Items.Add("Sallader");
+            cboCategory.Items.Add("Soppor");
+            cboCategory.Items.Add("Dessert");
+            cboCategory.Items.Add("Kakor/Bakverk");
+
             IngredientsByValue = new Dictionary<string, string>();
         }
 
         private void cmdAddRecipe_Click(object sender, EventArgs e)
         {
             //TODO Anropa valideringar innan vi skapar recept
-            Recipe recept = new Recipe(txtRecipeName.Text, txtRecipeInfo.Text, cboCategory.SelectedItem.ToString(), IngredientsByValue);
+            string formatDescription = txtRecipeInfo.Text.Replace("\r\n", string.Empty);
 
+            Recipe recipe = new Recipe(txtRecipeName.Text, formatDescription, cboCategory.SelectedItem.ToString(), IngredientsByValue);
+            recipe.Save();
         }
 
         private void cmdAddIngredient_Click(object sender, EventArgs e)
