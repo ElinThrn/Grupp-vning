@@ -75,6 +75,12 @@
     <Compile Include="EditRecipe.Designer.cs">
       <DependentUpon>EditRecipe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="SearchRecipe.resx">
       <DependentUpon>SearchRecipe.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +101,9 @@
     </Compile>
     <EmbeddedResource Include="EditRecipe.resx">
       <DependentUpon>EditRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
