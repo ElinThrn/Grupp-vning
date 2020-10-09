@@ -83,7 +83,6 @@ namespace Gruppövning.Classes
 
         private static string SetPath()
         {
-            // string path = Directory.GetCurrentDirectory() + @"\recipeFile.txt";
             string path = Directory.GetParent(Directory.GetParent(Environment.CurrentDirectory).ToString()).ToString()+ @"\recipeFile.txt";
             return path;
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gruppövning.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +17,7 @@ namespace Gruppövning
         {
             InitializeComponent();
 
-            cboTypeRecipe.Items.Add("Kött");
-            cboTypeRecipe.Items.Add("Fisk");
-            cboTypeRecipe.Items.Add("Sallader");
-            cboTypeRecipe.Items.Add("Soppor");
-            cboTypeRecipe.Items.Add("Dessert");
-            cboTypeRecipe.Items.Add("Kakor/Bakverk");
+            DisplayInfo.AddCategory(cboTypeRecipe);
 
         }
 
