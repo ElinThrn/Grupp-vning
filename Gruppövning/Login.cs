@@ -39,18 +39,18 @@ namespace Gruppövning
             string userName = txtUsername.Text;
             string pw = txtPassword.Text;
 
-            if(userName == "admin" || pw == "password")
+            if (userName == "admin" || pw == "password")
             {
-           
-                MemberView member = new MemberView();
+
+                SokVy sok = new SokVy();
                 this.Hide();
                 SokVy.Hide();
-                member.Show();
+               
 
             }
 
 
 
-        }
+    }
     }
 }
