@@ -30,12 +30,12 @@
         {
             this.cmdLogin = new System.Windows.Forms.Button();
             this.txtSearchText = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstRecipe = new System.Windows.Forms.ListBox();
             this.cmdSearch = new System.Windows.Forms.Button();
             this.cboRecipeType = new System.Windows.Forms.ComboBox();
             this.cmdShowRecipes = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmdAddRecipe = new System.Windows.Forms.Button();
+            this.cmdEditRecipe = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,14 +58,15 @@
             this.txtSearchText.Size = new System.Drawing.Size(188, 22);
             this.txtSearchText.TabIndex = 1;
             // 
-            // listBox1
+            // lstRecipe
             // 
-            this.listBox1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(30, 139);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(406, 225);
-            this.listBox1.TabIndex = 2;
+            this.lstRecipe.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstRecipe.FormattingEnabled = true;
+            this.lstRecipe.Location = new System.Drawing.Point(30, 139);
+            this.lstRecipe.Name = "lstRecipe";
+            this.lstRecipe.Size = new System.Drawing.Size(406, 212);
+            this.lstRecipe.TabIndex = 2;
+            this.lstRecipe.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lstRecipe_MouseDoubleClick);
             // 
             // cmdSearch
             // 
@@ -76,6 +77,7 @@
             this.cmdSearch.TabIndex = 3;
             this.cmdSearch.Text = "Sök";
             this.cmdSearch.UseVisualStyleBackColor = true;
+            this.cmdSearch.Click += new System.EventHandler(this.cmdSearch_Click);
             // 
             // cboRecipeType
             // 
@@ -98,7 +100,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cmdAddRecipe);
+            this.groupBox1.Controls.Add(this.cmdEditRecipe);
             this.groupBox1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -107,14 +109,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sök recept";
             // 
-            // cmdAddRecipe
+            // cmdEditRecipe
             // 
-            this.cmdAddRecipe.Location = new System.Drawing.Point(138, 367);
-            this.cmdAddRecipe.Name = "cmdAddRecipe";
-            this.cmdAddRecipe.Size = new System.Drawing.Size(97, 28);
-            this.cmdAddRecipe.TabIndex = 16;
-            this.cmdAddRecipe.Text = "Lägg till";
-            this.cmdAddRecipe.UseVisualStyleBackColor = true;
+            this.cmdEditRecipe.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdEditRecipe.Location = new System.Drawing.Point(135, 367);
+            this.cmdEditRecipe.Name = "cmdEditRecipe";
+            this.cmdEditRecipe.Size = new System.Drawing.Size(100, 28);
+            this.cmdEditRecipe.TabIndex = 7;
+            this.cmdEditRecipe.Text = "Redigera";
+            this.cmdEditRecipe.UseVisualStyleBackColor = true;
             // 
             // SearchRecipe
             // 
@@ -124,12 +127,12 @@
             this.Controls.Add(this.cmdShowRecipes);
             this.Controls.Add(this.cboRecipeType);
             this.Controls.Add(this.cmdSearch);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lstRecipe);
             this.Controls.Add(this.txtSearchText);
             this.Controls.Add(this.cmdLogin);
             this.Controls.Add(this.groupBox1);
             this.Name = "SearchRecipe";
-            this.Text = "Search Recipe";
+            this.Text = "SearchRecipe";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -140,12 +143,12 @@
 
         private System.Windows.Forms.Button cmdLogin;
         private System.Windows.Forms.TextBox txtSearchText;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lstRecipe;
         private System.Windows.Forms.Button cmdSearch;
         private System.Windows.Forms.ComboBox cboRecipeType;
         private System.Windows.Forms.Button cmdShowRecipes;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button cmdAddRecipe;
+        private System.Windows.Forms.Button cmdEditRecipe;
     }
 }
 

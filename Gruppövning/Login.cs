@@ -39,18 +39,21 @@ namespace Gruppövning
             string userName = txtUsername.Text;
             string pw = txtPassword.Text;
 
-            if (userName == "admin" || pw == "password")
+            if(userName == "admin" || pw == "password")
             {
 
-                SokVy sok = new SokVy();
+                SearchRecipe searchrecipe = new SearchRecipe();
                 this.Hide();
                 SokVy.Hide();
-               
-
+                
+            }
+            else
+            {
+                MessageBox.Show("Login eller lösenord var fel. Prova igen.");
             }
 
 
 
-    }
+        }
     }
 }
