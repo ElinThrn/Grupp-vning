@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DisplayInfo.cs" />
+    <Compile Include="ExceptionHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="SearchRecipe.cs">
       <SubType>Form</SubType>
