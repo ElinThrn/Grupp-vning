@@ -41,12 +41,15 @@ namespace Gruppövning
 
             if (userName == "admin" || pw == "password")
             {
-
-                //SokVy sok = new SokVy();
-                //this.Hide();
-                //SokVy.Hide();
-               
-
+           
+                MemberView member = new MemberView();
+                this.Hide();
+                SokVy.Hide();
+                member.Show();
+            }
+            else
+            {
+                MessageBox.Show("Login eller lösenord var fel. Prova igen.");
             }
 
 

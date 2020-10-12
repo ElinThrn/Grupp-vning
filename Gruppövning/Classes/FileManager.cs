@@ -75,15 +75,17 @@ namespace Gruppövning.Classes
 
             foreach (var ingredient in recipe.IngredientsByAmount)
             {
-                recipeInput += string.Join(";", ingredient.Value, ingredient.Key);
+                recipeInput += string.Join(";", ingredient.Key, ingredient.Value);
+                recipeInput += ";";
             }
+            string output = recipeInput.Remove(recipeInput.Length - 1, 1);
 
-            return recipeInput;
+            return output;
         }
 
         private static string SetPath()
         {
-            string path = Directory.GetParent(Directory.GetParent(Environment.CurrentDirectory).ToString()).ToString()+ @"\recipeFile.txt";
+            string path = Directory.GetParent(Directory.GetParent(Environment.CurrentDirectory).ToString()).ToString() + @"\recipeFile.txt";
             return path;
         }
     }

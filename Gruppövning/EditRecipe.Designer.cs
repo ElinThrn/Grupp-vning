@@ -31,7 +31,7 @@
             this.txtRecipeName = new System.Windows.Forms.TextBox();
             this.txtRecipeInfo = new System.Windows.Forms.TextBox();
             this.cboKitchen = new System.Windows.Forms.ComboBox();
-            this.cboCategori = new System.Windows.Forms.ComboBox();
+            this.cboCategory = new System.Windows.Forms.ComboBox();
             this.cboRecipeMethod = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cmdAddIngredient = new System.Windows.Forms.Button();
             this.cmdDeleteIngredient = new System.Windows.Forms.Button();
-            this.listBoxEdit = new System.Windows.Forms.ListBox();
+            this.lstIngredients = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // txtRecipeName
@@ -75,14 +75,14 @@
             this.cboKitchen.Size = new System.Drawing.Size(317, 21);
             this.cboKitchen.TabIndex = 2;
             // 
-            // cboCategori
+            // cboCategory
             // 
-            this.cboCategori.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCategori.FormattingEnabled = true;
-            this.cboCategori.Location = new System.Drawing.Point(49, 285);
-            this.cboCategori.Name = "cboCategori";
-            this.cboCategori.Size = new System.Drawing.Size(317, 21);
-            this.cboCategori.TabIndex = 3;
+            this.cboCategory.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCategory.FormattingEnabled = true;
+            this.cboCategory.Location = new System.Drawing.Point(49, 285);
+            this.cboCategory.Name = "cboCategory";
+            this.cboCategory.Size = new System.Drawing.Size(317, 21);
+            this.cboCategory.TabIndex = 3;
             // 
             // cboRecipeMethod
             // 
@@ -152,6 +152,7 @@
             this.cmdAddRecipe.TabIndex = 10;
             this.cmdAddRecipe.Text = "Lägg till recept";
             this.cmdAddRecipe.UseVisualStyleBackColor = true;
+            this.cmdAddRecipe.Click += new System.EventHandler(this.cmdAddRecipe_Click);
             // 
             // cmdDeleteRecipe
             // 
@@ -208,6 +209,7 @@
             this.cmdAddIngredient.TabIndex = 16;
             this.cmdAddIngredient.Text = "Lägg till";
             this.cmdAddIngredient.UseVisualStyleBackColor = true;
+            this.cmdAddIngredient.Click += new System.EventHandler(this.cmdAddIngredient_Click);
             // 
             // cmdDeleteIngredient
             // 
@@ -218,21 +220,22 @@
             this.cmdDeleteIngredient.TabIndex = 18;
             this.cmdDeleteIngredient.Text = "Ta bort";
             this.cmdDeleteIngredient.UseVisualStyleBackColor = true;
+            this.cmdDeleteIngredient.Click += new System.EventHandler(this.cmdDeleteIngredient_Click);
             // 
-            // listBoxEdit
+            // lstIngredients
             // 
-            this.listBoxEdit.FormattingEnabled = true;
-            this.listBoxEdit.Location = new System.Drawing.Point(399, 160);
-            this.listBoxEdit.Name = "listBoxEdit";
-            this.listBoxEdit.Size = new System.Drawing.Size(314, 199);
-            this.listBoxEdit.TabIndex = 19;
+            this.lstIngredients.FormattingEnabled = true;
+            this.lstIngredients.Location = new System.Drawing.Point(399, 160);
+            this.lstIngredients.Name = "lstIngredients";
+            this.lstIngredients.Size = new System.Drawing.Size(314, 199);
+            this.lstIngredients.TabIndex = 19;
             // 
             // EditRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 465);
-            this.Controls.Add(this.listBoxEdit);
+            this.Controls.Add(this.lstIngredients);
             this.Controls.Add(this.cmdDeleteIngredient);
             this.Controls.Add(this.cmdAddIngredient);
             this.Controls.Add(this.label7);
@@ -247,12 +250,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboRecipeMethod);
-            this.Controls.Add(this.cboCategori);
+            this.Controls.Add(this.cboCategory);
             this.Controls.Add(this.cboKitchen);
             this.Controls.Add(this.txtRecipeInfo);
             this.Controls.Add(this.txtRecipeName);
             this.Name = "EditRecipe";
-            this.Text = "Edit";
+            this.Text = "Redigera";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,7 +266,7 @@
         private System.Windows.Forms.TextBox txtRecipeName;
         private System.Windows.Forms.TextBox txtRecipeInfo;
         private System.Windows.Forms.ComboBox cboKitchen;
-        private System.Windows.Forms.ComboBox cboCategori;
+        private System.Windows.Forms.ComboBox cboCategory;
         private System.Windows.Forms.ComboBox cboRecipeMethod;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -278,6 +281,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button cmdAddIngredient;
         private System.Windows.Forms.Button cmdDeleteIngredient;
-        private System.Windows.Forms.ListBox listBoxEdit;
+        private System.Windows.Forms.ListBox lstIngredients;
     }
 }
