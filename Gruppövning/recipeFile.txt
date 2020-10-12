@@ -1,0 +1,3 @@
+﻿0f8fad5b-d9cb-469f-a165-70867728950e;Korv Stroganoff;Skär korven i strimlor. Skala och hacka löken. Fixa till resten;Kött%Falukorv;300g;Gul lök;1st;Matlagningsgrädde;3dl
+0f32ad5b-d1cb-432f-a165-70867893950e;Kantarellsoppa;Ansa och skär svampen i mindre bitar. Skala och finhacka löken. Fräs lök och svamp i smör i en gryta. Fixa till resten;Soppa%Färska kantareller;1l;Gul lök;1st;Matlagningsgrädde;3dl;torrt vitt vin;1dl
+0f12ad5b-d1cb-431f-a165-70867323250e;Rulltårta;Vispa ägg och socker pösigt, tillsätt vatten. Blanda mjöl och bakpulver, sikta ner det i smeten. Fixa till resten;Dessert%Ägg;3st;Strösocker;1dl;Bakpulver;1½tsk

@@ -39,13 +39,13 @@ namespace Gruppövning
             string userName = txtUsername.Text;
             string pw = txtPassword.Text;
 
-            if(userName == "admin" || pw == "password")
+            if (userName == "admin" || pw == "password")
             {
-
-                SearchRecipe searchrecipe = new SearchRecipe();
+           
+                MemberView member = new MemberView();
                 this.Hide();
                 SokVy.Hide();
-                
+                member.Show();
             }
             else
             {
@@ -54,6 +54,6 @@ namespace Gruppövning
 
 
 
-        }
+    }
     }
 }
