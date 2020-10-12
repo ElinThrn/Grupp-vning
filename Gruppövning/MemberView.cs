@@ -21,5 +21,15 @@ namespace Gruppövning
 
         }
 
+        private void cmdAddRecipe_Click(object sender, EventArgs e)
+        {
+            EditRecipe editRecipe = new EditRecipe();
+            editRecipe.Show();
+        }
+
+        private void cmdSearchLogin_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

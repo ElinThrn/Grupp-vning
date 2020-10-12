@@ -48,7 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DisplayInfo.cs" />
-    <Compile Include="ExceptionHelper.cs" />
+    <Compile Include="ShowRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowRecipe.Designer.cs">
+      <DependentUpon>ShowRecipe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="SearchRecipe.cs">
       <SubType>Form</SubType>
@@ -97,6 +102,9 @@
     </Compile>
     <EmbeddedResource Include="EditRecipe.resx">
       <DependentUpon>EditRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowRecipe.resx">
+      <DependentUpon>ShowRecipe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

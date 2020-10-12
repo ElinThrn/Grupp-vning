@@ -46,7 +46,10 @@ namespace Gruppövning
                 this.Hide();
                 SokVy.Hide();
                 member.Show();
-
+            }
+            else
+            {
+                MessageBox.Show("Login eller lösenord var fel. Prova igen.");
             }
 
 

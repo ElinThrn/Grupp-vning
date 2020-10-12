@@ -16,7 +16,7 @@ namespace Gruppövning
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EditRecipe());
+            Application.Run(new SearchRecipe());
         }
     }
 }
