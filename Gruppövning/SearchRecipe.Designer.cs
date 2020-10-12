@@ -35,6 +35,8 @@
             this.cboRecipeType = new System.Windows.Forms.ComboBox();
             this.cmdShowRecipes = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmdAddRecipe = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmdLogin
@@ -105,6 +107,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmdAddRecipe);
             this.groupBox1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(24, 23);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
@@ -114,6 +117,15 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sök recept";
+            // 
+            // cmdAddRecipe
+            // 
+            this.cmdAddRecipe.Location = new System.Drawing.Point(138, 367);
+            this.cmdAddRecipe.Name = "cmdAddRecipe";
+            this.cmdAddRecipe.Size = new System.Drawing.Size(97, 28);
+            this.cmdAddRecipe.TabIndex = 16;
+            this.cmdAddRecipe.Text = "Lägg till";
+            this.cmdAddRecipe.UseVisualStyleBackColor = true;
             // 
             // SearchRecipe
             // 
@@ -129,7 +141,8 @@
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "SearchRecipe";
-            this.Text = "Sök recept";
+            this.Text = "Search Recipe";
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,6 +157,7 @@
         private System.Windows.Forms.ComboBox cboRecipeType;
         private System.Windows.Forms.Button cmdShowRecipes;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button cmdAddRecipe;
     }
 }
 

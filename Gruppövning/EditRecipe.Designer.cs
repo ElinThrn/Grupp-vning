@@ -227,7 +227,7 @@
             this.listBoxEdit.Size = new System.Drawing.Size(314, 199);
             this.listBoxEdit.TabIndex = 19;
             // 
-            // Redigera
+            // EditRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -251,8 +251,8 @@
             this.Controls.Add(this.cboKitchen);
             this.Controls.Add(this.txtRecipeInfo);
             this.Controls.Add(this.txtRecipeName);
-            this.Name = "Redigera";
-            this.Text = "Redigera";
+            this.Name = "EditRecipe";
+            this.Text = "Edit";
             this.ResumeLayout(false);
             this.PerformLayout();
 
