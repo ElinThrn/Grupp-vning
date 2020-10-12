@@ -42,9 +42,9 @@ namespace Gruppövning
             if (userName == "admin" || pw == "password")
             {
 
-                SokVy sok = new SokVy();
-                this.Hide();
-                SokVy.Hide();
+                //SokVy sok = new SokVy();
+                //this.Hide();
+                //SokVy.Hide();
                
 
             }

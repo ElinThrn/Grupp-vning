@@ -30,13 +30,13 @@
         {
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.lstIngredients = new System.Windows.Forms.ListBox();
             this.lblCategory = new System.Windows.Forms.Label();
+            this.lstIngredients = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(324, 154);
+            this.txtDescription.Location = new System.Drawing.Point(324, 109);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(654, 353);
@@ -45,20 +45,12 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Location = new System.Drawing.Point(124, 58);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(53, 25);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Title";
-            // 
-            // lstIngredients
-            // 
-            this.lstIngredients.FormattingEnabled = true;
-            this.lstIngredients.ItemHeight = 25;
-            this.lstIngredients.Location = new System.Drawing.Point(53, 153);
-            this.lstIngredients.Name = "lstIngredients";
-            this.lstIngredients.Size = new System.Drawing.Size(223, 354);
-            this.lstIngredients.TabIndex = 3;
             // 
             // lblCategory
             // 
@@ -69,11 +61,20 @@
             this.lblCategory.TabIndex = 2;
             this.lblCategory.Text = "Category";
             // 
+            // lstIngredients
+            // 
+            this.lstIngredients.FormattingEnabled = true;
+            this.lstIngredients.ItemHeight = 25;
+            this.lstIngredients.Location = new System.Drawing.Point(40, 108);
+            this.lstIngredients.Name = "lstIngredients";
+            this.lstIngredients.Size = new System.Drawing.Size(235, 354);
+            this.lstIngredients.TabIndex = 5;
+            // 
             // ShowRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 643);
+            this.ClientSize = new System.Drawing.Size(1057, 583);
             this.Controls.Add(this.lstIngredients);
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.lblTitle);
@@ -89,7 +90,7 @@
 
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.ListBox lstIngredients;
         private System.Windows.Forms.Label lblCategory;
+        private System.Windows.Forms.ListBox lstIngredients;
     }
 }

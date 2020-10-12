@@ -17,10 +17,20 @@ namespace Gruppövning
         {
             InitializeComponent();
 
-            lblCategory.Text = recipe.Category;
-            
+            lblCategory.Text = "Kategori: " + recipe.Category;
 
-           // MessageBox.Show(combindedString.ToString());
+            lblTitle.Text = recipe.Title;
+
+            txtDescription.Text = recipe.Description;
+
+            lstIngredients.Items.Clear();
+
+            foreach (KeyValuePair<string, string> kvp in recipe.IngredientsByAmount)
+            {
+                lstIngredients.Items.Add(kvp.Value + " - " + kvp.Key);
+            }
+
+       
 
         }
     }

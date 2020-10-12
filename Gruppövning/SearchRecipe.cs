@@ -57,9 +57,9 @@ namespace Gruppövning
 
         private void lstRecipe_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            //string chosenrecipe = lstRecipe.SelectedItem.ToString();
+            //matchar recept titel i listboxen mot rätt titel i listan samt skickar till ShowRecipie formuläret.
+            //kommer att generera fel om två recept med samma titel läggs till
             Classes.Recipe chosenrecipe = (Classes.Recipe)recipes.Where(recepie => recepie.Title == lstRecipe.SelectedItem.ToString()).SingleOrDefault();
-
             ShowRecipe showRecipie = new ShowRecipe(chosenrecipe);
             showRecipie.Show();
 
