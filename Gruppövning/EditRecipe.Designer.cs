@@ -30,15 +30,11 @@
         {
             this.txtRecipeName = new System.Windows.Forms.TextBox();
             this.txtRecipeInfo = new System.Windows.Forms.TextBox();
-            this.cboKitchen = new System.Windows.Forms.ComboBox();
             this.cboCategory = new System.Windows.Forms.ComboBox();
-            this.cboRecipeMethod = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cmdAddRecipe = new System.Windows.Forms.Button();
+            this.cmdSaveRecipe = new System.Windows.Forms.Button();
             this.cmdDeleteRecipe = new System.Windows.Forms.Button();
             this.txtIngredient = new System.Windows.Forms.TextBox();
             this.txtIngredientMeasure = new System.Windows.Forms.TextBox();
@@ -52,54 +48,40 @@
             // txtRecipeName
             // 
             this.txtRecipeName.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecipeName.Location = new System.Drawing.Point(49, 35);
+            this.txtRecipeName.Location = new System.Drawing.Point(67, 43);
+            this.txtRecipeName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRecipeName.Name = "txtRecipeName";
-            this.txtRecipeName.Size = new System.Drawing.Size(317, 22);
+            this.txtRecipeName.Size = new System.Drawing.Size(421, 26);
             this.txtRecipeName.TabIndex = 0;
             // 
             // txtRecipeInfo
             // 
             this.txtRecipeInfo.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecipeInfo.Location = new System.Drawing.Point(49, 89);
+            this.txtRecipeInfo.Location = new System.Drawing.Point(67, 110);
+            this.txtRecipeInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRecipeInfo.Multiline = true;
             this.txtRecipeInfo.Name = "txtRecipeInfo";
-            this.txtRecipeInfo.Size = new System.Drawing.Size(317, 105);
+            this.txtRecipeInfo.Size = new System.Drawing.Size(421, 128);
             this.txtRecipeInfo.TabIndex = 1;
-            // 
-            // cboKitchen
-            // 
-            this.cboKitchen.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboKitchen.FormattingEnabled = true;
-            this.cboKitchen.Location = new System.Drawing.Point(49, 234);
-            this.cboKitchen.Name = "cboKitchen";
-            this.cboKitchen.Size = new System.Drawing.Size(317, 21);
-            this.cboKitchen.TabIndex = 2;
             // 
             // cboCategory
             // 
             this.cboCategory.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCategory.FormattingEnabled = true;
-            this.cboCategory.Location = new System.Drawing.Point(49, 285);
+            this.cboCategory.Location = new System.Drawing.Point(67, 302);
+            this.cboCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboCategory.Name = "cboCategory";
-            this.cboCategory.Size = new System.Drawing.Size(317, 21);
+            this.cboCategory.Size = new System.Drawing.Size(421, 27);
             this.cboCategory.TabIndex = 3;
-            // 
-            // cboRecipeMethod
-            // 
-            this.cboRecipeMethod.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboRecipeMethod.FormattingEnabled = true;
-            this.cboRecipeMethod.Location = new System.Drawing.Point(49, 336);
-            this.cboRecipeMethod.Name = "cboRecipeMethod";
-            this.cboRecipeMethod.Size = new System.Drawing.Size(317, 21);
-            this.cboRecipeMethod.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 19);
+            this.label1.Location = new System.Drawing.Point(63, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.Size = new System.Drawing.Size(121, 19);
             this.label1.TabIndex = 5;
             this.label1.Text = "Namn på receptet";
             // 
@@ -107,59 +89,43 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(46, 73);
+            this.label2.Location = new System.Drawing.Point(63, 91);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
+            this.label2.Size = new System.Drawing.Size(81, 19);
             this.label2.TabIndex = 6;
             this.label2.Text = "Beskrivning";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(46, 218);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Välj ett kök";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(46, 269);
+            this.label4.Location = new System.Drawing.Point(63, 267);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 13);
+            this.label4.Size = new System.Drawing.Size(106, 19);
             this.label4.TabIndex = 8;
             this.label4.Text = "Välj en kategori";
             // 
-            // label5
+            // cmdSaveRecipe
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(46, 320);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Välj tillagningssätt";
-            // 
-            // cmdAddRecipe
-            // 
-            this.cmdAddRecipe.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdAddRecipe.Location = new System.Drawing.Point(49, 402);
-            this.cmdAddRecipe.Name = "cmdAddRecipe";
-            this.cmdAddRecipe.Size = new System.Drawing.Size(146, 42);
-            this.cmdAddRecipe.TabIndex = 10;
-            this.cmdAddRecipe.Text = "Lägg till recept";
-            this.cmdAddRecipe.UseVisualStyleBackColor = true;
-            this.cmdAddRecipe.Click += new System.EventHandler(this.cmdAddRecipe_Click);
+            this.cmdSaveRecipe.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdSaveRecipe.Location = new System.Drawing.Point(532, 485);
+            this.cmdSaveRecipe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdSaveRecipe.Name = "cmdSaveRecipe";
+            this.cmdSaveRecipe.Size = new System.Drawing.Size(179, 52);
+            this.cmdSaveRecipe.TabIndex = 10;
+            this.cmdSaveRecipe.Text = "Spara";
+            this.cmdSaveRecipe.UseVisualStyleBackColor = true;
+            this.cmdSaveRecipe.Click += new System.EventHandler(this.cmdAddRecipe_Click);
             // 
             // cmdDeleteRecipe
             // 
             this.cmdDeleteRecipe.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdDeleteRecipe.Location = new System.Drawing.Point(220, 402);
+            this.cmdDeleteRecipe.Location = new System.Drawing.Point(760, 485);
+            this.cmdDeleteRecipe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdDeleteRecipe.Name = "cmdDeleteRecipe";
-            this.cmdDeleteRecipe.Size = new System.Drawing.Size(146, 42);
+            this.cmdDeleteRecipe.Size = new System.Drawing.Size(179, 52);
             this.cmdDeleteRecipe.TabIndex = 11;
             this.cmdDeleteRecipe.Text = "Ta bort recept";
             this.cmdDeleteRecipe.UseVisualStyleBackColor = true;
@@ -167,26 +133,29 @@
             // txtIngredient
             // 
             this.txtIngredient.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIngredient.Location = new System.Drawing.Point(396, 35);
+            this.txtIngredient.Location = new System.Drawing.Point(528, 43);
+            this.txtIngredient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIngredient.Name = "txtIngredient";
-            this.txtIngredient.Size = new System.Drawing.Size(317, 22);
+            this.txtIngredient.Size = new System.Drawing.Size(421, 26);
             this.txtIngredient.TabIndex = 12;
             // 
             // txtIngredientMeasure
             // 
             this.txtIngredientMeasure.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIngredientMeasure.Location = new System.Drawing.Point(396, 86);
+            this.txtIngredientMeasure.Location = new System.Drawing.Point(528, 106);
+            this.txtIngredientMeasure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIngredientMeasure.Name = "txtIngredientMeasure";
-            this.txtIngredientMeasure.Size = new System.Drawing.Size(317, 22);
+            this.txtIngredientMeasure.Size = new System.Drawing.Size(421, 26);
             this.txtIngredientMeasure.TabIndex = 13;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(396, 19);
+            this.label6.Location = new System.Drawing.Point(528, 23);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 13);
+            this.label6.Size = new System.Drawing.Size(74, 19);
             this.label6.TabIndex = 14;
             this.label6.Text = "Ingrediens";
             // 
@@ -194,18 +163,20 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(396, 70);
+            this.label7.Location = new System.Drawing.Point(528, 86);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 13);
+            this.label7.Size = new System.Drawing.Size(39, 19);
             this.label7.TabIndex = 15;
             this.label7.Text = "Mått";
             // 
             // cmdAddIngredient
             // 
             this.cmdAddIngredient.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdAddIngredient.Location = new System.Drawing.Point(399, 114);
+            this.cmdAddIngredient.Location = new System.Drawing.Point(532, 140);
+            this.cmdAddIngredient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdAddIngredient.Name = "cmdAddIngredient";
-            this.cmdAddIngredient.Size = new System.Drawing.Size(75, 23);
+            this.cmdAddIngredient.Size = new System.Drawing.Size(100, 28);
             this.cmdAddIngredient.TabIndex = 16;
             this.cmdAddIngredient.Text = "Lägg till";
             this.cmdAddIngredient.UseVisualStyleBackColor = true;
@@ -214,9 +185,10 @@
             // cmdDeleteIngredient
             // 
             this.cmdDeleteIngredient.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdDeleteIngredient.Location = new System.Drawing.Point(480, 114);
+            this.cmdDeleteIngredient.Location = new System.Drawing.Point(640, 140);
+            this.cmdDeleteIngredient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdDeleteIngredient.Name = "cmdDeleteIngredient";
-            this.cmdDeleteIngredient.Size = new System.Drawing.Size(77, 23);
+            this.cmdDeleteIngredient.Size = new System.Drawing.Size(103, 28);
             this.cmdDeleteIngredient.TabIndex = 18;
             this.cmdDeleteIngredient.Text = "Ta bort";
             this.cmdDeleteIngredient.UseVisualStyleBackColor = true;
@@ -225,16 +197,18 @@
             // lstIngredients
             // 
             this.lstIngredients.FormattingEnabled = true;
-            this.lstIngredients.Location = new System.Drawing.Point(399, 160);
+            this.lstIngredients.ItemHeight = 16;
+            this.lstIngredients.Location = new System.Drawing.Point(532, 197);
+            this.lstIngredients.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstIngredients.Name = "lstIngredients";
-            this.lstIngredients.Size = new System.Drawing.Size(314, 199);
+            this.lstIngredients.Size = new System.Drawing.Size(417, 244);
             this.lstIngredients.TabIndex = 19;
             // 
             // EditRecipe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(739, 465);
+            this.ClientSize = new System.Drawing.Size(985, 572);
             this.Controls.Add(this.lstIngredients);
             this.Controls.Add(this.cmdDeleteIngredient);
             this.Controls.Add(this.cmdAddIngredient);
@@ -243,17 +217,14 @@
             this.Controls.Add(this.txtIngredientMeasure);
             this.Controls.Add(this.txtIngredient);
             this.Controls.Add(this.cmdDeleteRecipe);
-            this.Controls.Add(this.cmdAddRecipe);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cmdSaveRecipe);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cboRecipeMethod);
             this.Controls.Add(this.cboCategory);
-            this.Controls.Add(this.cboKitchen);
             this.Controls.Add(this.txtRecipeInfo);
             this.Controls.Add(this.txtRecipeName);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EditRecipe";
             this.Text = "Redigera";
             this.ResumeLayout(false);
@@ -265,15 +236,11 @@
 
         private System.Windows.Forms.TextBox txtRecipeName;
         private System.Windows.Forms.TextBox txtRecipeInfo;
-        private System.Windows.Forms.ComboBox cboKitchen;
         private System.Windows.Forms.ComboBox cboCategory;
-        private System.Windows.Forms.ComboBox cboRecipeMethod;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button cmdAddRecipe;
+        private System.Windows.Forms.Button cmdSaveRecipe;
         private System.Windows.Forms.Button cmdDeleteRecipe;
         private System.Windows.Forms.TextBox txtIngredient;
         private System.Windows.Forms.TextBox txtIngredientMeasure;

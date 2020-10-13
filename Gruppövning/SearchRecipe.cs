@@ -64,5 +64,10 @@ namespace Gruppövning
             showRecipie.Show();
 
         }
+
+        private void cmdEditRecipes_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
