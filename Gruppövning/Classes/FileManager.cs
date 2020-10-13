@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
 
 namespace Gruppövning.Classes
 {
@@ -34,11 +31,11 @@ namespace Gruppövning.Classes
             using (sr)
             {
                 string inputRead;
-                while (( inputRead = sr.ReadLine()) != null )
+                while ((inputRead = sr.ReadLine()) != null)
                 {
                     Recipe tempRecipe;
 
-                    
+
                     string fields = inputRead.Substring(0, inputRead.IndexOf('%'));
                     string ingredients = inputRead.Substring(inputRead.IndexOf('%') + 1);
 

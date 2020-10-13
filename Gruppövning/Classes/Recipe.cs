@@ -20,7 +20,7 @@ namespace Gruppövning.Classes
             this.IngredientsByAmount = ingredients;
         }
 
-        public Recipe(Guid guid , string title, string description, string category, Dictionary<string, string> ingredients)
+        public Recipe(Guid guid, string title, string description, string category, Dictionary<string, string> ingredients)
         {
             this.Id = guid;
             this.Title = title;

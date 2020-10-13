@@ -1,12 +1,6 @@
 ﻿using Gruppövning.Classes;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Gruppövning
@@ -46,7 +40,7 @@ namespace Gruppövning
             ToEdit = recipe;
 
             IngredientsByValue = new Dictionary<string, string>();
-            //recipe.IngredientsByAmount;
+
             foreach (var keyValuePair in recipe.IngredientsByAmount)
             {
                 IngredientsByValue.Add(keyValuePair.Key, keyValuePair.Value);

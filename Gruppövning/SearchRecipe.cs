@@ -1,12 +1,8 @@
 ﻿using Gruppövning.Classes;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Gruppövning
@@ -52,16 +48,17 @@ namespace Gruppövning
                 exceptionhelper.WriteToLogFile(exception);
             }
         }
-       
-    private void cmdSearch_Click(object sender, EventArgs e)
-        {
-        try { 
-            string searchtext = txtSearchText.Text;
-            string combobox = this.cboRecipeType.GetItemText(this.cboRecipeType.SelectedItem);
-           
-            var matches = recipes.Where(a => a.Category == combobox); //bland de recept som matchar kategori
 
-            lstRecipe.Items.Clear(); //töm listboxen
+        private void cmdSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string searchtext = txtSearchText.Text;
+                string combobox = this.cboRecipeType.GetItemText(this.cboRecipeType.SelectedItem);
+
+                var matches = recipes.Where(a => a.Category == combobox); //bland de recept som matchar kategori
+
+                lstRecipe.Items.Clear(); //töm listboxen
 
                 foreach (Recipe recipe in matches)
                 {
@@ -72,13 +69,13 @@ namespace Gruppövning
                         lstRecipe.Items.Add(recipe.Title);
                     }
                 }
-        }
-        catch (Exception exception)
-        {
+            }
+            catch (Exception exception)
+            {
                 ExceptionHelper exceptionhelper = new ExceptionHelper();
                 exceptionhelper.WriteToLogFile(exception);
+            }
         }
-    }
 
         private void lstRecipe_MouseDoubleClick(object sender, MouseEventArgs e)
         {
