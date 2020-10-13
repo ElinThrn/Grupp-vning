@@ -33,10 +33,9 @@ namespace Gruppövning.Classes
             FileManager.Write(this);
         }
 
-        public void SaveEdited()
+        public void SaveEdited(Recipe oldRecipe)
         {
-            // TODO: change to FileManager MethodCall
-            //SaveEditedFile(this.Id, this.Title, this.Description, this.Category, this.IngredientsByAmount);
+            FileManager.Update(oldRecipe, this);
         }
 
         public void Delete()

@@ -1,3 +1,5 @@
-﻿0f8fad5b-d9cb-469f-a165-70867728950e;Korv Stroganoff;Skär korven i strimlor. Skala och hacka löken. Fixa till resten;Kött%Falukorv;300g;Gul lök;1st;Matlagningsgrädde;3dl
-0f32ad5b-d1cb-432f-a165-70867893950e;Kantarellsoppa;Ansa och skär svampen i mindre bitar. Skala och finhacka löken. Fräs lök och svamp i smör i en gryta. Fixa till resten;Soppor%Färska kantareller;1l;Gul lök;1st;Matlagningsgrädde;3dl;torrt vitt vin;1dl
-0f12ad5b-d1cb-431f-a165-70867323250e;Rulltårta;Vispa ägg och socker pösigt, tillsätt vatten. Blanda mjöl och bakpulver, sikta ner det i smeten. Fixa till resten;Dessert%Ägg;3st;Strösocker;1dl;Bakpulver;1½tsk
+f72908ec-1777-4be3-b214-7725a9d96f63;Korv Stroganoff ändrad;Skär korven i strimlor. Skala och hacka löken. Fixa till resten;Kött%Falukorv;300g;Gul lök;1st;Matlagningsgrädde;3dl
+88623e09-f23c-41cd-a693-96bbd1deb23b;Kantarellsoppa ändrad;Ansa och skär svampen i mindre bitar. Skala och finhacka löken. Fräs lök och svamp i smör i en gryta. Fixa till resten;Soppor%Färska kantareller;1l;Gul lök;1st;Matlagningsgrädde;3dl;torrt vitt vin;1dl
+fe3712e0-8464-48bd-9403-061c6bc710e0;Rulltårta ändrad;Vispa ägg och socker pösigt, tillsätt vatten. Blanda mjöl och bakpulver, sikta ner det i smeten. Fixa till resten;Dessert%Ägg;3st;Strösocker;1dl;Bakpulver;1½tskd5542e34-9c62-4f61-8409-6250b36002d6;Niclas ger upp;Tänk på förlängingssladden;Dessert%Ångest;3L
+17b9cc39-d70a-4805-b5d4-c8141fda671a;Niclas Ångest;Nej;Dessert%Ångest;3L
+75a163a0-7b29-41ab-a9df-00bfe4a27f90;Jag orkar inte;För helvete;Fisk%Mer ångest;4L

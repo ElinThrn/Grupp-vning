@@ -13,7 +13,7 @@ namespace Gruppövning
 {
     public partial class SearchRecipe : Form
     {
-        List<Recipe> recipes = FileManager.Read();
+        List<Recipe> recipes;
         public bool isLoggedIn = false;
         public SearchRecipe()
         {
@@ -25,12 +25,7 @@ namespace Gruppövning
             cboRecipeType.Items.Add("Soppor");
             cboRecipeType.Items.Add("Dessert");
             cboRecipeType.Items.Add("Kakor/Bakverk");
-            List<Recipe> onLoad = FileManager.Read();
-
-            foreach (var item in onLoad)
-            {
-                lstRecipe.Items.Add(item.Title);
-            }
+            this.OnLoad();
         }
 
         private void cmdLogin_Click(object sender, EventArgs e)
@@ -89,6 +84,7 @@ namespace Gruppövning
             {
                 editForm.ShowDialog();
             }
+            this.OnLoad();
             this.Show();
         }
 
@@ -99,7 +95,21 @@ namespace Gruppövning
             {
                 editForm.ShowDialog();
             }
+            this.OnLoad();
             this.Show();
+        }
+
+        private void OnLoad()
+        {
+            lstRecipe.Items.Clear();
+            List<Recipe> onLoad = FileManager.Read();
+
+            foreach (var item in onLoad)
+            {
+                lstRecipe.Items.Add(item.Title);
+            }
+
+            recipes = FileManager.Read();
         }
     }
 }

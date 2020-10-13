@@ -13,6 +13,8 @@ namespace Gruppövning
 {
     public partial class EditRecipe : Form
     {
+        private bool Edit { get; set; }
+        private Recipe ToEdit { get; set; }
         public Dictionary<string, string> IngredientsByValue { get; set; }
 
         public EditRecipe()
@@ -24,6 +26,7 @@ namespace Gruppövning
             cboCategory.Items.Add("Soppor");
             cboCategory.Items.Add("Dessert");
             cboCategory.Items.Add("Kakor/Bakverk");
+            this.Edit = false;
 
             IngredientsByValue = new Dictionary<string, string>();
         }
@@ -38,8 +41,11 @@ namespace Gruppövning
             cboCategory.Items.Add("Soppor");
             cboCategory.Items.Add("Dessert");
             cboCategory.Items.Add("Kakor/Bakverk");
+            this.Edit = true;
 
-            IngredientsByValue = new Dictionary<string, string>();
+            ToEdit = recipe;
+
+            IngredientsByValue = recipe.IngredientsByAmount;
 
             PopulateTextBoxes(recipe);
 
@@ -52,7 +58,17 @@ namespace Gruppövning
             string formatDescription = txtRecipeInfo.Text.Replace("\r\n", string.Empty);
 
             Recipe recipe = new Recipe(txtRecipeName.Text, formatDescription, cboCategory.SelectedItem.ToString(), IngredientsByValue);
-            recipe.Save();
+
+            if (Edit == true)
+            {
+                recipe.SaveEdited(ToEdit);
+
+            }
+            else if (Edit == false)
+            {
+                recipe.Save();
+            }
+            this.Close();
         }
 
         private void cmdAddIngredient_Click(object sender, EventArgs e)
