@@ -21,25 +21,31 @@ namespace Gruppövning
         }
 
         public SearchRecipe SokVy;
-
+        
         private void cmdMemberLogin_Click(object sender, EventArgs e)
         {
-            string userName = txtUsername.Text;
-            string pw = txtPassword.Text;
-
-            if (userName == "admin" || pw == "password")
+            try
             {
-                toChange.isLoggedIn = true;
-                this.Close();
-          
+                string userName = txtUsername.Text;
+                string pw = txtPassword.Text;
+
+                if (userName == "admin" || pw == "password")
+                {
+                    toChange.isLoggedIn = true;
+                    this.Close();
+
+                }
+                else
+                {
+                    MessageBox.Show("Login eller lösenord var fel. Prova igen.");
+                }
             }
-            else
+            catch (Exception exception)
             {
-                MessageBox.Show("Login eller lösenord var fel. Prova igen.");
+                ExceptionHelper exceptionHelper = new ExceptionHelper();
+                exceptionHelper.WriteToLogFile(exception);
             }
 
-
-
-    }
+        }
     }
 }

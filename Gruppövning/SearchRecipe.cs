@@ -30,23 +30,32 @@ namespace Gruppövning
 
         private void cmdLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            using (Login login = new Login(this))
+            try
             {
-                
-                login.ShowDialog();
-                login.SokVy = this;
-            }
-            if (isLoggedIn == true)
-            {
-                cmdAdd.Visible = true;
-                cmdEditRecipes.Visible = true;
-            }
-            this.Show();
-        }
+                this.Hide();
+                using (Login login = new Login(this))
+                {
 
-        private void cmdSearch_Click(object sender, EventArgs e)
+                    login.ShowDialog();
+                    login.SokVy = this;
+                }
+                if (isLoggedIn == true)
+                {
+                    cmdAdd.Visible = true;
+                    cmdEditRecipes.Visible = true;
+                }
+                this.Show();
+            }
+            catch (Exception exception)
+            {
+                ExceptionHelper exceptionhelper = new ExceptionHelper();
+                exceptionhelper.WriteToLogFile(exception);
+            }
+        }
+       
+    private void cmdSearch_Click(object sender, EventArgs e)
         {
+        try { 
             string searchtext = txtSearchText.Text;
             string combobox = this.cboRecipeType.GetItemText(this.cboRecipeType.SelectedItem);
            
@@ -64,52 +73,93 @@ namespace Gruppövning
                     }
                 }
         }
+        catch (Exception exception)
+        {
+                ExceptionHelper exceptionhelper = new ExceptionHelper();
+                exceptionhelper.WriteToLogFile(exception);
+        }
+    }
 
         private void lstRecipe_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            //matchar recept titel i listboxen mot rätt titel i listan samt skickar till ShowRecipie formuläret.
-            //kommer att generera fel om två recept med samma titel läggs till
-            Classes.Recipe chosenrecipe = (Classes.Recipe)recipes.Where(recepie => recepie.Title == lstRecipe.SelectedItem.ToString()).SingleOrDefault();
-            ShowRecipe showRecipie = new ShowRecipe(chosenrecipe);
-            showRecipie.Show();
+            try
+            {
+                //matchar recept titel i listboxen mot rätt titel i listan samt skickar till ShowRecipie formuläret.
+                //kommer att generera fel om två recept med samma titel läggs till
+                if (lstRecipe.SelectedItem != null)
+                {
+                    Classes.Recipe chosenrecipe = (Classes.Recipe)recipes.Where(recepie => recepie.Title == lstRecipe.SelectedItem.ToString()).SingleOrDefault();
+                    ShowRecipe showRecipie = new ShowRecipe(chosenrecipe);
+                    showRecipie.Show();
+                }
+            }
 
+            catch (Exception exception)
+            {
+                ExceptionHelper exceptionhelper = new ExceptionHelper();
+                exceptionhelper.WriteToLogFile(exception);
+            }
         }
 
         private void cmdEditRecipes_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Recipe toSend = recipes.Find(n => n.Title == lstRecipe.SelectedItem.ToString());
-
-            using (Form editForm = new EditRecipe(toSend))
+            try
             {
-                editForm.ShowDialog();
+                this.Hide();
+                Recipe toSend = recipes.Find(n => n.Title == lstRecipe.SelectedItem.ToString());
+
+                using (Form editForm = new EditRecipe(toSend))
+                {
+                    editForm.ShowDialog();
+                }
+                this.OnLoad();
+                this.Show();
             }
-            this.OnLoad();
-            this.Show();
+            catch (Exception exception)
+            {
+                ExceptionHelper exceptionhelper = new ExceptionHelper();
+                exceptionhelper.WriteToLogFile(exception);
+            }
         }
 
         private void cmdAdd_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            using (Form editForm = new EditRecipe())
+            try
             {
-                editForm.ShowDialog();
+                this.Hide();
+                using (Form editForm = new EditRecipe())
+                {
+                    editForm.ShowDialog();
+                }
+                this.OnLoad();
+                this.Show();
             }
-            this.OnLoad();
-            this.Show();
+            catch (Exception exception)
+            {
+                ExceptionHelper exceptionhelper = new ExceptionHelper();
+                exceptionhelper.WriteToLogFile(exception);
+            }
         }
 
         private void OnLoad()
         {
-            lstRecipe.Items.Clear();
-            List<Recipe> onLoad = FileManager.Read();
-
-            foreach (var item in onLoad)
+            try
             {
-                lstRecipe.Items.Add(item.Title);
-            }
+                lstRecipe.Items.Clear();
+                List<Recipe> onLoad = FileManager.Read();
 
-            recipes = FileManager.Read();
+                foreach (var item in onLoad)
+                {
+                    lstRecipe.Items.Add(item.Title);
+                }
+
+                recipes = FileManager.Read();
+            }
+            catch (Exception exception)
+            {
+                ExceptionHelper exceptionhelper = new ExceptionHelper();
+                exceptionhelper.WriteToLogFile(exception);
+            }
         }
     }
 }

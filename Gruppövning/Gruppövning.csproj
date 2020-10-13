@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DisplayInfo.cs" />
+    <Compile Include="Classes\ExceptionHelper.cs" />
     <Compile Include="ShowRecipe.cs">
       <SubType>Form</SubType>
     </Compile>
