@@ -21,21 +21,6 @@ namespace Gruppövning
         }
 
         public SearchRecipe SokVy;
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void cmdMemberLogin_Click(object sender, EventArgs e)
         {
