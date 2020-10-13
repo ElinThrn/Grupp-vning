@@ -2,4 +2,4 @@ f72908ec-1777-4be3-b214-7725a9d96f63;Korv Stroganoff ändrad;Skär korven i stri
 88623e09-f23c-41cd-a693-96bbd1deb23b;Kantarellsoppa ändrad;Ansa och skär svampen i mindre bitar. Skala och finhacka löken. Fräs lök och svamp i smör i en gryta. Fixa till resten;Soppor%Färska kantareller;1l;Gul lök;1st;Matlagningsgrädde;3dl;torrt vitt vin;1dl
 fe3712e0-8464-48bd-9403-061c6bc710e0;Rulltårta ändrad;Vispa ägg och socker pösigt, tillsätt vatten. Blanda mjöl och bakpulver, sikta ner det i smeten. Fixa till resten;Dessert%Ägg;3st;Strösocker;1dl;Bakpulver;1½tskd5542e34-9c62-4f61-8409-6250b36002d6;Niclas ger upp;Tänk på förlängingssladden;Dessert%Ångest;3L
 17b9cc39-d70a-4805-b5d4-c8141fda671a;Niclas Ångest;Nej;Dessert%Ångest;3L
-af6013cf-9396-40a6-b56a-761c61557a15;Jag orkar inte;För helvete;Dessert%Mer ångest;4L
+36570ace-a9a2-4d10-84ae-fa51216f5a0e;Jag orkar inte;För helvete;Fisk%Mer ångest;4L;ilska;5l

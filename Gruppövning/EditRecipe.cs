@@ -45,7 +45,12 @@ namespace Gruppövning
 
             ToEdit = recipe;
 
-            IngredientsByValue = recipe.IngredientsByAmount;
+            IngredientsByValue = new Dictionary<string, string>();
+            //recipe.IngredientsByAmount;
+            foreach (var keyValuePair in recipe.IngredientsByAmount)
+            {
+                IngredientsByValue.Add(keyValuePair.Key, keyValuePair.Value);
+            }
 
             PopulateTextBoxes(recipe);
 
