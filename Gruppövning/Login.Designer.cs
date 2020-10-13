@@ -38,27 +38,28 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(57, 67);
+            this.txtUsername.Location = new System.Drawing.Point(114, 129);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(131, 22);
+            this.txtUsername.Size = new System.Drawing.Size(258, 37);
             this.txtUsername.TabIndex = 0;
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(57, 120);
+            this.txtPassword.Location = new System.Drawing.Point(114, 231);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(131, 22);
+            this.txtPassword.Size = new System.Drawing.Size(258, 37);
             this.txtPassword.TabIndex = 1;
-            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // cmdMemberLogin
             // 
             this.cmdMemberLogin.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdMemberLogin.Location = new System.Drawing.Point(70, 172);
+            this.cmdMemberLogin.Location = new System.Drawing.Point(140, 331);
+            this.cmdMemberLogin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cmdMemberLogin.Name = "cmdMemberLogin";
-            this.cmdMemberLogin.Size = new System.Drawing.Size(100, 41);
+            this.cmdMemberLogin.Size = new System.Drawing.Size(200, 79);
             this.cmdMemberLogin.TabIndex = 2;
             this.cmdMemberLogin.Text = "Logga in";
             this.cmdMemberLogin.UseVisualStyleBackColor = true;
@@ -68,9 +69,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 51);
+            this.label1.Location = new System.Drawing.Point(108, 98);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.Size = new System.Drawing.Size(164, 30);
             this.label1.TabIndex = 3;
             this.label1.Text = "Användarnamn";
             // 
@@ -78,23 +80,24 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(54, 104);
+            this.label2.Location = new System.Drawing.Point(108, 200);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(105, 30);
             this.label2.TabIndex = 4;
             this.label2.Text = "Lösenord";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(254, 285);
+            this.ClientSize = new System.Drawing.Size(508, 548);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmdMemberLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);
