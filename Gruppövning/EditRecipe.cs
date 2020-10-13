@@ -9,7 +9,7 @@ namespace Gruppövning
     {
         private bool Edit { get; set; }
         private Recipe ToEdit { get; set; }
-        public Dictionary<string, string> IngredientsByValue { get; set; }
+        private Dictionary<string, string> IngredientsByValue { get; set; }
 
         public EditRecipe()
         {

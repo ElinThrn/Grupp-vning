@@ -66,7 +66,7 @@ namespace Gruppövning.Classes
             File.WriteAllLines(SetPath(), newLines);
         }
 
-        public static string FormatRecipe(Recipe recipe)
+        private static string FormatRecipe(Recipe recipe)
         {
             string recipeInput = string.Join(";", recipe.Id.ToString(), recipe.Title, recipe.Description, recipe.Category) + "%";
 
