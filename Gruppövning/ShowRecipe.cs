@@ -29,9 +29,6 @@ namespace Gruppövning
             {
                 lstIngredients.Items.Add(kvp.Value + " - " + kvp.Key);
             }
-
-       
-
         }
     }
 }

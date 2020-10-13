@@ -14,6 +14,7 @@ namespace Gruppövning
     public partial class SearchRecipe : Form
     {
         List<Recipe> recipes = FileManager.Read();
+        public bool isLoggedIn = false;
         public SearchRecipe()
         {
             InitializeComponent();
@@ -24,15 +25,29 @@ namespace Gruppövning
             cboRecipeType.Items.Add("Soppor");
             cboRecipeType.Items.Add("Dessert");
             cboRecipeType.Items.Add("Kakor/Bakverk");
+            List<Recipe> onLoad = FileManager.Read();
 
+            foreach (var item in onLoad)
+            {
+                lstRecipe.Items.Add(item.Title);
+            }
         }
 
         private void cmdLogin_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
-            login.SokVy = this;
-           
+            this.Hide();
+            using (Login login = new Login(this))
+            {
+                
+                login.ShowDialog();
+                login.SokVy = this;
+            }
+            if (isLoggedIn == true)
+            {
+                cmdAdd.Visible = true;
+                cmdEditRecipes.Visible = true;
+            }
+            this.Show();
         }
 
         private void cmdSearch_Click(object sender, EventArgs e)
@@ -67,7 +82,24 @@ namespace Gruppövning
 
         private void cmdEditRecipes_Click(object sender, EventArgs e)
         {
-           
+            this.Hide();
+            Recipe toSend = recipes.Find(n => n.Title == lstRecipe.SelectedItem.ToString());
+
+            using (Form editForm = new EditRecipe(toSend))
+            {
+                editForm.ShowDialog();
+            }
+            this.Show();
+        }
+
+        private void cmdAdd_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            using (Form editForm = new EditRecipe())
+            {
+                editForm.ShowDialog();
+            }
+            this.Show();
         }
     }
 }

@@ -12,9 +12,12 @@ namespace Gruppövning
 {
     public partial class Login : Form
     {
-        public Login()
+        public SearchRecipe toChange;
+        public Login(SearchRecipe from)
         {
             InitializeComponent();
+            toChange = from;
+
         }
 
         public SearchRecipe SokVy;
@@ -41,11 +44,9 @@ namespace Gruppövning
 
             if (userName == "admin" || pw == "password")
             {
-           
-                MemberView member = new MemberView();
-                this.Hide();
-                SokVy.Hide();
-                member.Show();
+                toChange.isLoggedIn = true;
+                this.Close();
+          
             }
             else
             {

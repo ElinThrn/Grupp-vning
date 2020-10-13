@@ -28,6 +28,24 @@ namespace Gruppövning
             IngredientsByValue = new Dictionary<string, string>();
         }
 
+        public EditRecipe(Recipe recipe)
+        {
+            InitializeComponent();
+
+            cboCategory.Items.Add("Kött");
+            cboCategory.Items.Add("Fisk");
+            cboCategory.Items.Add("Sallader");
+            cboCategory.Items.Add("Soppor");
+            cboCategory.Items.Add("Dessert");
+            cboCategory.Items.Add("Kakor/Bakverk");
+
+            IngredientsByValue = new Dictionary<string, string>();
+
+            PopulateTextBoxes(recipe);
+
+
+        }
+
         private void cmdAddRecipe_Click(object sender, EventArgs e)
         {
             //TODO Anropa valideringar innan vi skapar recept
@@ -59,6 +77,19 @@ namespace Gruppövning
             IngredientsByValue.Remove(toRemove);
 
             lstIngredients.Items.RemoveAt(lstIngredients.SelectedIndex);
+        }
+
+        private void PopulateTextBoxes(Recipe rec)
+        {
+            txtRecipeName.Text = rec.Title;
+            txtRecipeInfo.Text = rec.Description;
+            cboCategory.SelectedIndex = cboCategory.FindStringExact(rec.Category);
+
+            foreach (KeyValuePair<string, string> kvp in rec.IngredientsByAmount)
+            {
+                lstIngredients.Items.Add(kvp.Value + " - " + kvp.Key);
+            }
+
         }
     }
 }
